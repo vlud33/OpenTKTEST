@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "OpenTKGAME": {
+      "commandName": "Project",
+      "workingDirectory": "C:\\Users\\USER\\Desktop\\OPENTK_TEST\\OpenTKGAME\\OpenTKGAME"
+    }
+  }
+}

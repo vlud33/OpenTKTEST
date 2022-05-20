@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTKGAME", "OpenTKGAME\OpenTKGAME.csproj", "{B3C47FDD-51F1-45C9-985A-3E7F0057F17B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3C47FDD-51F1-45C9-985A-3E7F0057F17B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3C47FDD-51F1-45C9-985A-3E7F0057F17B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3C47FDD-51F1-45C9-985A-3E7F0057F17B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3C47FDD-51F1-45C9-985A-3E7F0057F17B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {99B230C8-A8B0-4A6D-BDF6-89A706C7AB9A}
+	EndGlobalSection
+EndGlobal
