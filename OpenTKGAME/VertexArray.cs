@@ -16,5 +16,10 @@ namespace GameCore
         {
             GL.BindVertexArray(_vertexArrayObject);
         }
+
+        public void UnBind()
+        {
+            GL.BindVertexArray(0);
+        }
     }
 }
