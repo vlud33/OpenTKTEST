@@ -5,12 +5,12 @@ using SixLabors.ImageSharp.Processing;
 
 namespace GameCore.Graphics
 {
-    internal class Texture
+    internal class TextureConfigure
     {
         public int TextureHandle;
         private Image<Rgba32> _image;
         
-        public Texture(string path, TextureUnit textureUnit)
+        public TextureConfigure(string path, TextureUnit textureUnit)
         {
             TextureHandle = GL.GenTexture();
             Use(textureUnit);

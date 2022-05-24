@@ -1,6 +1,7 @@
 ﻿using Assimp;
 using Assimp.Configs;
 using GameCore;
+using GameCore.Graphics;
 using OpenTK.Mathematics;
 
 namespace GameAddition.LoadModel
@@ -8,7 +9,7 @@ namespace GameAddition.LoadModel
     internal sealed class ModelLoader
     {
         private Scene _scene;
-        private List<GameCore.Graphics.Mesh> asd;
+        private List<GameCore.Graphics.Mesh> _meshes;
 
         public ModelLoader(string path)
         {
@@ -105,6 +106,21 @@ namespace GameAddition.LoadModel
             if (mesh.MaterialIndex < 0) return;
 
             Material material = scene.Materials[mesh.MaterialIndex];
+        }
+
+        private void LoadMaterial(Material material, TextureType textureType, string type)
+        {
+            for (int i = 0; i < material.GetMaterialTextureCount(textureType); i++)
+            {
+                TextureSlot textureSlot;
+                TextureInfo textureInfo;
+
+                if (material.GetMaterialTexture(textureType, 0, out textureSlot))
+                {
+                    string pathToTexture = textureSlot.FilePath;
+                    TextureConfigure textureConfigure = new TextureConfigure(pathToTexture, OpenTK.Graphics.OpenGL4.TextureUnit.Texture0);
+                }
+            }
         }
     }
 }

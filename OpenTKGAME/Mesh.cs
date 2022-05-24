@@ -59,8 +59,6 @@ namespace GameCore.Graphics
 
             for (int i = 0; i < _texturesInfo.Count; i++)
             {
-                GL.ActiveTexture(TextureUnit.Texture0 + i);
-                
                 string name = "";
                 string type = _texturesInfo[i].Type;
 
@@ -77,7 +75,7 @@ namespace GameCore.Graphics
 
                 shaderProgram.SetUniform1(name, i);
 
-                GL.BindTexture(TextureTarget.Texture2D, _texturesInfo[i].Id);
+                _texturesInfo[i].Texture.Use(TextureUnit.Texture0 + i);
             }
 
             GL.ActiveTexture(TextureUnit.Texture0);

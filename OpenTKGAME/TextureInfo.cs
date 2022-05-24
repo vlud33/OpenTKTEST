@@ -1,14 +1,18 @@
-﻿namespace GameCore
+﻿using GameCore.Graphics;
+
+namespace GameCore
 {
     internal struct TextureInfo
     {
-        public readonly uint Id;
+        public readonly TextureConfigure Texture;
         public readonly string Type;
+        public readonly string Path;
 
-        public TextureInfo(uint id, string type)
+        public TextureInfo(TextureConfigure texture, string type, string path)
         {
-            Id = id;
+            Texture = texture;
             Type = type;
+            Path = path;
         }
     }
 }
